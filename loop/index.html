@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="buttons">
+          <button class="active">tab1</button>
+          <button>tab2</button>
+          <button>tab3</button>
+        </div>
+        <div class="panels">
+          <div class="panel-1-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            inventore cupiditate atque fugiat deleniti nisi iusto eius. Ipsum
+            necessitatibus voluptatem totam. Itaque ullam,
+          </div>
+          <div class="panel-1-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            inventore cupiditate atque fugiat deleniti nisi iusto eius.
+            consequuntur voluptates non cumque eius temporibus nisi.
+          </div>
+          <div class="panel-1-3">
+            Lorem, Adipisci inventore cupiditate atque fugiat deleniti nisi
+            iusto eius. Ipsum necessitatibus voluptatem totam. Itaque ullam,
+            consequuntur voluptates non cumque eius temporibus nisi.
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+      }
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #212121;
+      }
+      .tabs {
+        width: 80%;
+        border: 1px solid #fff;
+        padding: 0.5rem;
+      }
+      .tabs > div {
+        width: 100%;
+      }
+      .tabs .buttons {
+        display: flex;
+      }
+      .tabs button {
+        width: 33.33%;
+        color: #212121;
+        background: #fff;
+        border: 0;
+        outline: 0;
+        padding: 1rem 0;
+      }
+      .tabs button:not(:nth-child(3)) {
+        border-right: 1px solid #212121;
+      }
+      .tabs button.active {
+        background: lightsalmon;
+        color: #fff;
+      }
+
+      .panels > div {
+        padding: 0.5rem;
+        border-top: none;
+        background: lightsalmon;
+        display: none;
+      }
+      .panels > div.panel-1-1 {
+        display: block;
+      }
+    </style>
+    <!-- <script src="loop.js"></script> -->
+    <script src="arrMethod.js"></script>
+  </body>
+</html>
